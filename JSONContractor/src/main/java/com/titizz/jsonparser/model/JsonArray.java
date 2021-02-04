@@ -43,8 +43,10 @@ public class JsonArray implements Iterable {
         return (JsonArray) obj;
     }
 
-    // TODO
-    // @Override
+    @Override
+    public String toString() {
+        return BeautifyJsonUtils.beautify(this);
+    }
 
     public Iterator iterator() { return list.iterator(); }
 }

@@ -56,7 +56,9 @@ public class JsonObject {
         return (JsonArray) obj;
     }
 
-    // TODO
-    // @Override
 
+    @Override
+    public String toString() {
+        return BeautifyJsonUtils.beautify(this);
+    }
 }
