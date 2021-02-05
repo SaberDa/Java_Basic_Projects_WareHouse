@@ -31,7 +31,7 @@ public class CharReader {
     /**
      * return the index of 'pos'
      */
-    public char peak() {
+    public char peek() {
         if (pos - 1 >= size) {
             return (char) -1;
         }
